@@ -1,12 +1,13 @@
 import React from 'react';
-class Core extends React.Component {
-  state(){
-    firstTab: {income: 0,
-    }
-  }
-  render() {
-    return <div></div>;
-  }
-}
 
+function Core(props) {
+  return (
+    <>
+      <div className='core'>
+        <div className='logo'></div>
+        <p className='income'>0</p>
+      </div>
+    </>
+  );
+}
 export default Core;

@@ -1,17 +1,22 @@
 import '../style/main.scss';
-import Game from './Game';
 
-function App() {
-  return (
-    <div className='gameWindow'>
-      <div className='tasks'></div>
-      <div className='tabs'></div>
-      <div className='game'>
-        <Game />
+import React, { Component } from 'react';
+import GameWindow from './GameWindow';
+import Core from './Core';
+import main from '../style/main.scss';
+
+class App extends Component {
+  state = {
+    income: 0,
+  };
+  render() {
+    return (
+      <div className='wrapper'>
+        <Core />
+        <GameWindow />;
       </div>
-      <div className='upgrades'></div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
