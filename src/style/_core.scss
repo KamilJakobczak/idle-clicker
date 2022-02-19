@@ -1,5 +1,24 @@
 .core {
-  background-color: beige;
-  width: 200px;
-  height: 100px;
+  flex-basis: 100%;
+  min-height: 50px;
+  display: flex;
+  .logo {
+    // background-color: ;
+    width: 75px;
+    height: 75px;
+    img {
+      overflow: hidden;
+      transform: translate(-25%, -25%);
+      width: 200%;
+      height: 200%;
+    }
+  }
+
+  p.income {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2em;
+
+    margin: auto;
+  }
 }
